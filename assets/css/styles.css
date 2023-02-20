@@ -150,9 +150,11 @@ height: var(--header-height);
   color:var(--white-color);
   font-size: var(--h3-font-size);
   font-family: var(--second-font);
+  gap:10px;
 }
 .nav-logo img{
   width:20px;
+
 }
 /* Navigation for mobile devices */
 @media(max-width:1024px){
@@ -579,7 +581,28 @@ font-weight: bold;
 
 
 /* Show Scroll Up */
+.scrollup{
+  position: fixed;
+  background-color:#fff;
+  right: 1rem;
+  bottom: 5rem;
+  display: inline-flex;
+  padding: .5rem;
+  border-radius: .25rem;
+  z-index: 10;
+  opacity: .8;
+  transition: .4s;
+}
 
+.scrollup__icon{
+  font-size: 1rem;
+  color: #FFF;
+}
+
+.scrollup:hover{
+  background-color: #ddb66e;
+  opacity: 1;
+}
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
@@ -632,5 +655,13 @@ padding:50px;
 }
 .steps-container img{
   position:absolute;
+}
+.steps-content {
+  position:relative;
+}
+.steps-border{
+  position:absolute;
+  top:50px;
+  left:500px;
 }
 }
